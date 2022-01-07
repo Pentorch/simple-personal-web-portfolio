@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Form</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="left">
+        <img
+          src="https://raw.githubusercontent.com/DumbwaysDotId/creating-navbar-and-layouting/master/assets/logo.png"
+          alt="IMG"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="form">
+    <form onsubmit="addBlog(event)"  data-aos="flip-up">
+      <h1>Create Post Blog</h1>
+      <div>
+        <label for="input-title">Title</label>
+        <input type="text" id="input-title" placeholder="Input Title" />
+      </div>
+
+      <div>
+        <label for="input-content">Content</label>
+        <textarea
+          name=""
+          id="input-content"
+          cols="20"
+          rows="5"
+          maxlength="1000"
+        ></textarea>
+      </div>
+      <div>
+        <div>
+          <label for="input-image">Upload Image</label>
+          <input type="file" id="input-image" placeholder="Input Image" />
+      </div>
+        </div>
+        <button class="button" type="submit">
+          Submit
+        </button>
+      </div>
+      </form>
+      </div>
+    <hr class="line">
+    <div id="contents" class="form-blog" data-aos="flip-up">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1638913662295-9630035ef770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="IMG" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              12 August 2022 12:30 WIB | Willy Agustino Efendi
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+            <div class="content-time">
+                <span>
+                  1 day ago
+                </span>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      
+    
+    <script src="assets/scripts/blog.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
