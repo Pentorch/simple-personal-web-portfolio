@@ -613,13 +613,13 @@ div.moving-tittle {
 }
 .section .right img {
   font-family: var(--font);
-  font-weight: 600;
-  border-radius: 12px;
+  /* font-weight: 600; */
+
   transition: all 250ms ease;
   /* text-align: center; */
   border: 1px solid #26243b;
-  padding: -100px;
-  padding-top: -50px;
+  padding: 0;
+  /* padding-top: -30%; */
   margin: 50px;
 
   background-color: #f2f6f9;
